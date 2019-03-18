@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 import atexit
 from pyVmomi import vim, vmodl
-from pyVim.connect import SmartConnectNoSSL, Disconnect
+from pyvim.connect import SmartConnectNoSSL, Disconnect
 import atexit
 from tools import pchelper
 #  IT'S FROM  https://github.com/vmware/pyvmomi-community-samples/tree/master/samples/tools
@@ -59,7 +59,7 @@ def vm_beat(host,user,pwd,port):
 if __name__ == '__main__':
     host = "192.168.51.20"
     user = "administrator@vsphere.local"
-    pwd = "123456.Asd"
+    pwd = "12345.Asd"
     port = 443
 
     print(vm_beat(host, user, pwd, port))

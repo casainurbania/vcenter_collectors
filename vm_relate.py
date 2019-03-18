@@ -9,7 +9,7 @@ Example: Get guest info with folder and host placement
 
 # from pyVmomi import vim
 
-from pyVim.connect import SmartConnectNoSSL, Disconnect
+from pyvim.connect import SmartConnectNoSSL, Disconnect
 
 import argparse
 import atexit

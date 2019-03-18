@@ -2,7 +2,7 @@
 
 import atexit
 from pyVmomi import vim, vmodl
-from pyVim.connect import SmartConnectNoSSL, Disconnect
+from pyvim.connect import SmartConnectNoSSL, Disconnect
 
 def get_obj(content, vim_type, name=None):
     obj = None
@@ -82,7 +82,7 @@ def run(host,user,pwd,port):
 if __name__ == "__main__":
     host = "192.168.51.20"
     user = "administrator@vsphere.local"
-    pwd = "123456.Asd"
+    pwd = "12345.Asd"
     port = 443
 
     print(run(host, user, pwd, port))

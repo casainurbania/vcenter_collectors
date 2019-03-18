@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 from pyVmomi import vim,vmodl
-from pyVim.connect import SmartConnect, Disconnect
+from pyvim.connect import SmartConnect, Disconnect
 import atexit
 import sys
 import time
@@ -20,7 +20,7 @@ class VCenter:
         self.pyVmomi = __import__("pyVmomi")
         self.vcenter_server = '192.168.51.20'
         self.vcenter_username = 'administrator@vsphere.local'
-        self.vcenter_password = '123456.Asd'
+        self.vcenter_password = '12345.Asd'
         self.port = 443
         # self.isDHCP=False,
         # self.vm_ip = '10.7.42.91',
@@ -317,4 +317,6 @@ if __name__ == '__main__':
 #######################################
 
 
-
+if __name__ == '__main__':
+    v=VCenter
+    print VCenter.get_clusters()

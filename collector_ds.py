@@ -5,7 +5,7 @@
 
 import atexit
 from pyVmomi import vim
-from pyVim.connect import SmartConnect, Disconnect
+from pyvim.connect import SmartConnect, Disconnect
 import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
 
@@ -69,4 +69,4 @@ def ds_beat(host, user, pwd, port):
 
 
 if __name__ == '__main__':
-    print(ds_beat('192.168.51.20', 'administrator@vsphere.local', '123456.Asd', 443))
+    print(ds_beat('192.168.51.20', 'administrator@vsphere.local', '12345.Asd', 443))
