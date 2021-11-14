@@ -5,7 +5,7 @@ idna==2.7
 lxml==4.6.3
 prompt-toolkit==2.0.4
 pyflakes==2.0.0
-Pygments==2.2.0
+Pygments==2.7.4
 pytils==0.3
 pyvim==2.0.22
 pyvmomi==6.7.0.2018.9
